@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".SignUp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarf"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#550DB9"
+        android:elevation="4dp"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgSignUp"
+        android:layout_width="220dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="29dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarf"
+        app:srcCompat="@drawable/img_2" />
+
+    <EditText
+        android:id="@+id/SignUpEmail"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/txtbg"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSignUp" />
+
+    <EditText
+        android:id="@+id/SignUpPassword"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/txtbg"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpEmail" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="161dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:text="Sign Up"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpPassword" />
+
+    <ProgressBar
+        android:id="@+id/progressBarID"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="44dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
